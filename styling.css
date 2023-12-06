@@ -1,0 +1,59 @@
+body{
+    background-color: #f9f9f9;
+    color:#0A0D16 ;
+    font-family: "Saira Condensed", sans-serif;
+    /*reset*/
+    margin:0px;
+}
+.header-img {
+   max-width: 100%;
+    height: auto;
+    width: 100%;
+    
+    object-fit: contain;
+
+
+}
+.navigation{
+    background-color: #0F172E;
+    text-align: center; 
+    font-size: 32px;
+    line-height: normal;
+    font-weight: 700;
+    padding: 20px;
+    
+
+}
+.navigation a{
+    color: #f9f9f9;
+}
+ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    
+}
+li{
+    display: inline;
+    margin: 50px;
+    font-size: 32px;
+    font-style: normal;
+
+
+      
+}
+main{
+   text-align: center;
+  
+   color: #0A0D16;
+   font-size: 20px;
+   font-style: normal;
+   font-weight: 600
+   
+   
+}
+footer{
+    background-color:#905B3E;
+    height: 240px;
+    
+}
