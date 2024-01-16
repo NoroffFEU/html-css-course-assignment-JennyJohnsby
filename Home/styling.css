@@ -85,14 +85,18 @@ main{
    color: #0F172E;
    font-size: 1.25rem;
    font-style: normal;
-   font-weight: 600
+   font-weight: 600 ;
    
  
 }
 footer{
     background-color:#905B3E;
-    height: 304px;
     position: relative;  
+}
+.footer-layout{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+
 }
 .overlay-text{
     color: #f9f9f9;
@@ -101,6 +105,9 @@ footer{
     font-weight: 700;
     line-height: normal;
     text-transform: uppercase;
+    grid-column: 1/-1;
+    justify-self: center;
+
 }
 .free-shipping{
 
@@ -108,15 +115,24 @@ footer{
 font-style: normal;
 font-weight: 600;
 line-height: normal;
+display: flex;
+gap: 0.5rem;
+justify-self: center;
+align-self: center;
+
+
+}
+.free-shipping p{
+    margin-block-end: 0;
+    margin-block-start: 0;
 }
 .paymentmethods{
     display: flex;
     width: 287px;
     height: 54px;
-    align-items: flex-start;
+    align-items: center;
     gap: 30px;
     flex-shrink: 0;
-
 }
 .terms-privacy{
     color: #F9F9F9;
@@ -125,6 +141,13 @@ line-height: normal;
     font-style: normal;
     font-weight: 700;
     line-height: normal; 
+    margin-block-end: 0;
+    margin-block-start: 0;
+}
+.terms-wrapper{
+    background-color: #905B3E;
+    align-self: center;
+    justify-self: center;
 }
 .show-us{
     color: #F9F9F9;
@@ -139,4 +162,10 @@ line-height: normal;
     display: flex;
     align-items: flex-start;
     gap: 20px;
+    padding-bottom: 50px;
+    padding-left: 50px;
+}
+.social-media-wrapper{
+    align-self: center;
+    justify-self: center;
 }
