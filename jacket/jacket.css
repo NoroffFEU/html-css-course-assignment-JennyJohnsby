@@ -32,12 +32,24 @@ section{
         gap: 1rem;
         margin: 10rem;
     }
+    .jacket1{
+        width: 595px;
+        height: 723px;
+       
+
+
+    }
+    .img-jacket-wrapper{
+        width: 80%;
+        margin: auto;
+    }
     button{
         background-color: #0F172E;
         color: #F9F9F9;
         font-family: "Saira Condensed";
         font-size: 1.75rem;
-        border-radius: 1rem;
+        border-radius: 2rem;
+        padding: 20px;
     }
 .navigation{
     background-color: #0F172E;
@@ -68,6 +80,9 @@ li{
     font-size: 2rem;
     font-style: normal;    
 }
+.size-wrapper{
+    max-width: 50%;
+}
 footer{
     background-color:#905B3E;
     position: relative;  
@@ -86,7 +101,6 @@ footer{
     text-transform: uppercase;
     grid-column: 1/-1;
     justify-self: center;
-
 }
 .free-shipping{
 
@@ -98,8 +112,6 @@ display: flex;
 gap: 0.5rem;
 justify-self: center;
 align-self: center;
-
-
 }
 .free-shipping p{
     margin-block-end: 0;
@@ -112,6 +124,13 @@ align-self: center;
     align-items: center;
     gap: 30px;
     flex-shrink: 0;
+}
+.snakkeboble{
+    position: absolute;
+    justify-self: center;
+align-self: center;
+top: -65px;
+padding-left: 160px;
 }
 .terms-privacy{
     color: #F9F9F9;
@@ -147,4 +166,12 @@ line-height: normal;
 .social-media-wrapper{
     align-self: center;
     justify-self: center;
+}
+@media (max-width:1000px){
+    section{
+        flex-direction: column;
+    }
+    footer{
+        flex-direction: column;
+    }
 }
