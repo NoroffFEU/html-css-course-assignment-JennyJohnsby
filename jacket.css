@@ -1,0 +1,17 @@
+@import url(often.css);
+    .jacket1{
+        width: 595px;
+        height: 723px;
+    }
+    .link-as-button{
+        background-color: #0F172E;
+        color: #F9F9F9;
+        font-family: "Saira Condensed";
+        font-size: 1.75rem;
+        border-radius: 2rem;
+        padding: 20px;
+        text-decoration: none;
+     }
+.size-wrapper{
+    max-width: 50%;
+}

@@ -1,0 +1,34 @@
+@import url(./often.css);
+.bluebar{
+    background-color: #0F172E;
+    text-align: center;
+    color: #f9f9f9;
+    
+}
+.fake-button{
+    background-color: #0F172E;
+    color: #f9f9f9;
+    padding: 1rem;
+    border-radius: 1rem;
+    text-decoration: none;
+    margin: 1rem;
+}
+.fake-button-2{
+    border: 4px solid #0F172E;
+    border-radius: 1rem;
+    padding: 1rem;
+    margin: 1rem;
+    margin-top: 2rem;
+    
+}
+.other-products{
+    border: 4px solid #0F172E;
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 3rem;
+    max-width: 50%;
+    
+}
+.jackets{
+    
+}

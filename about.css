@@ -1,0 +1,60 @@
+@import url(/often.css);
+.round-picture-home{
+    max-height: 426px;
+}
+.map{
+    height: 500px;
+    align-self: center;  
+}
+input{
+    border-bottom: 2px solid #383C3E;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    background-color: #f9f9f9;
+margin: 12px;
+}
+.field-file{
+    border: 1px dashed #383C3E;
+    grid-column: 1/3; 
+}
+.form{
+    display: grid;
+    grid-template-columns: 8rem 1fr;
+    
+    }
+ .form label{
+    justify-self: end;
+ }
+ .attach-file{
+    grid-column: 1/3;
+    
+ }
+ .checkbox-label-wrapper{
+    grid-column: 1/3;
+ }
+ .form-weak-text{
+    color: #383C3E;
+    font-size: 1rem;
+ }
+.link-as-button{
+    background-color: #0F172E;
+    color: #f9f9f9;
+    font-family:"Saira Condensed";
+    font-size: 1.5rem;
+    text-decoration: none;
+    border-radius: 1rem;
+    grid-column: 1/3;
+}
+.icon-text-wrapper{
+    display: flex;
+    gap: 0.5rem;
+    align-items: center;
+
+}
+.contact-wrapper{
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+    justify-content: center;
+}
