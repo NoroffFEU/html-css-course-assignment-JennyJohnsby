@@ -162,6 +162,9 @@ line-height: normal;
     section{
         flex-direction: column;
     }
+    body{
+        flex-shrink: 50% 50%;
+    }
     footer{
         flex-direction: column;
     }
