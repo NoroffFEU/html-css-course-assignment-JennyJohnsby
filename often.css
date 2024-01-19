@@ -12,7 +12,6 @@ body{
     height: 530px;
     margin: 0%;
     display: block; 
-     
      /*img leave a little gap when default display property*/
      /*change values if needed*/    
 }
@@ -114,6 +113,7 @@ align-self: center;
     align-items: center;
     gap: 30px;
     flex-shrink: auto;
+    padding-bottom: 1.5rem;
 }
 .snakkeboble{
     position: absolute;
@@ -164,6 +164,9 @@ line-height: normal;
     }
     footer{
         flex-direction: column;
+    }
+    img{
+        flex-shrink: 50% 50%;
     }
 }
 

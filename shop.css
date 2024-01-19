@@ -1,6 +1,9 @@
 @import url(./often.css);
 .jackets{
-  gap: 77px;    
+ gap: 0 5rem;
+  padding: 0 2rem;
+  align-items: center;
+  justify-self: center;
 }
 h3{
     text-decoration: underline;

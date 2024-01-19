@@ -1,6 +1,8 @@
 @import url(/often.css);
+
 .round-picture-home{
     max-height: 426px;
+    flex-shrink: auto;
 }
 .map{
     height: 500px;
