@@ -3,6 +3,14 @@ main{
     padding: 4rem;
 }
 .jacket1{
-    width: 595px;
-    height: 723px;
+   max-width: 310px;
+   width: 100%;
+}
+@media (max-width:1200px){
+    main{
+        padding: 1rem;
+    }
+    .jacket1{
+
+    }
 }
