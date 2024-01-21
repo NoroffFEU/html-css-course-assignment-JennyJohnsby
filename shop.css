@@ -1,9 +1,14 @@
 @import url(./often.css);
 .jackets{
- gap: 0 5rem;
+  display: flex;
   align-items: center;
-  justify-self: center;
-
+  flex-wrap: wrap;
+  justify-content: center;
+ gap: 0 5rem;
+}
+.jackets img{
+  max-width: 330px;
+  width: 100%;
 }
 h3{
     text-decoration: underline;
