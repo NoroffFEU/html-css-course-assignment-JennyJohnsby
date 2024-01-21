@@ -46,6 +46,13 @@
   margin-top: 2rem;
   display: inline-block;
 }
+.link-heading{
+  color: #f9f9f9;
+  text-decoration: none;
+}
+.link-heading:hover{
+  text-decoration: underline;
+}
 .other-products-jackets-wrapper {
   max-width: 100%;
 }
