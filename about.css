@@ -1,67 +1,64 @@
 @import url(/often.css);
 
-.round-picture-home{
-    max-height: 426px;
-    flex-shrink: auto;
+.round-picture-home {
+  max-height: 426px;
+  flex-shrink: auto;
 }
-.map{
-   max-height: 500px;
-    align-self: center;  
-    width: 100%;
-    object-fit: none;
+.map {
+  max-height: 500px;
+  align-self: center;
+  width: 100%;
+  object-fit: none;
 }
-input{
-    border-bottom: 2px solid #383C3E;
-    border-top: none;
-    border-left: none;
-    border-right: none;
-    background-color: #f9f9f9;
-margin: 12px;
+input {
+  border-bottom: 2px solid #383c3e;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  background-color: #f9f9f9;
+  margin: 12px;
 }
-.field-file{
-    border: 1px dashed #383C3E;
-    grid-column: 1/3; 
+.field-file {
+  border: 1px dashed #383c3e;
+  grid-column: 1/3;
 }
-.form{
-    display: grid;
-    grid-template-columns: 8rem 1fr;
-    
-    }
- .form label{
-    justify-self: end;
- }
- .attach-file{
-    grid-column: 1/3;
-    
- }
- .checkbox-label-wrapper{
-    grid-column: 1/3;
- }
- .form-weak-text{
-    color: #383C3E;
-    font-size: 1rem;
- }
-.link-as-button{
-    background-color: #0F172E;
-    color: #f9f9f9;
-    font-family:"Saira Condensed";
-    font-size: 1.5rem;
-    text-decoration: none;
-    border-radius: 1rem;
-    grid-column: 1/3;
-    max-width: 500px;
-    justify-self: center;
-    width: 100%;
+.form {
+  display: grid;
+  grid-template-columns: 8rem 1fr;
 }
-.icon-text-wrapper{
-    display: flex;
-    gap: 0.5rem;
-    align-items: center;
-
+.form label {
+  justify-self: end;
 }
-.contact-wrapper{
-    display: flex;
-    gap: 2rem;
-    align-items: center;
-    justify-content: center;
+.attach-file {
+  grid-column: 1/3;
+}
+.checkbox-label-wrapper {
+  grid-column: 1/3;
+}
+.form-weak-text {
+  color: #383c3e;
+  font-size: 1rem;
+}
+.link-as-button {
+  background-color: #0f172e;
+  color: #f9f9f9;
+  font-family: "Saira Condensed";
+  font-size: 1.5rem;
+  text-decoration: none;
+  border-radius: 1rem;
+  grid-column: 1/3;
+  max-width: 500px;
+  justify-self: center;
+  width: 100%;
+}
+.icon-text-wrapper {
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
+}
+.contact-wrapper {
+  display: flex;
+  gap: 2rem;
+  align-items: center;
+  justify-content: center;
 }

@@ -1,16 +1,13 @@
 @import url(./often.css);
-main{
-    padding: 4rem;
+main {
+  padding: 4rem;
 }
-.jacket1{
-   max-width: 310px;
-   width: 100%;
+.jacket1 {
+  max-width: 310px;
+  width: 100%;
 }
-@media (max-width:1200px){
-    main{
-        padding: 1rem;
-    }
-    .jacket1{
-
-    }
+@media (max-width: 1200px) {
+  main {
+    padding: 1rem;
+  }
 }
