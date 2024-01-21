@@ -1,10 +1,30 @@
+:root{
+--page-horizontal-padding: 5%;
+--super-dark-blue: #0f172e;
+--off-white: #f9f9f9;
+}
 body {
-  background-color: #f9f9f9;
-  color: #0f172e;
+  background-color: var(--off-white);
+  color: var(--super-dark-blue);
   font-family: "Saira Condensed", sans-serif;
   margin: 0px;
   font-size: 1.25rem;
   text-transform: uppercase;
+}
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  /*reset*/
+}
+main {
+  text-align: center;
+  font-style: normal;
+  font-weight: 600;
+}
+footer {
+  background-color: #905b3e;
+  position: relative;
 }
 .header-img {
   width: 100%;
@@ -25,22 +45,8 @@ body {
   width: 80%;
   max-width: 400px;
 }
-section {
-  display: flex;
-  gap: 1rem;
-  margin: 10rem;
-}
-section img {
-  align-self: center;
-}
-.header-logo {
-  position: absolute;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  top: 50%;
-}
 .navigation {
-  background-color: #0f172e;
+  background-color: var(--super-dark-blue);
   text-align: center;
   font-size: 2rem;
   line-height: normal;
@@ -49,41 +55,34 @@ section img {
   width: 100%;
 }
 .navigation a {
-  color: #f9f9f9;
+  color: var(--off-white);
   text-decoration: none;
 }
-nav a:hover {
+.navigation a:hover {
   text-decoration: underline;
 }
-ul {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-}
-li {
+.navigation li {
   display: inline;
   margin: 50px;
   font-size: 2rem;
   font-style: normal;
 }
-main {
-  text-align: center;
-  color: #0f172e;
-  font-size: 1.25rem;
-  font-style: normal;
-  font-weight: 600;
+.normal-section {
+  display: flex;
+  gap: 1rem;
+  margin: 5rem var(--page-horizontal-padding);
 }
-footer {
-  background-color: #905b3e;
-  position: relative;
+.normal-section img {
+  align-self: center;
 }
+
 .footer-layout {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   margin: 0 1rem;
 }
 .overlay-text {
-  color: #f9f9f9;
+  color: var(--off-white);
   font-size: 2rem;
   font-style: normal;
   font-weight: 700;
@@ -123,7 +122,7 @@ footer {
   right: 1rem;
 }
 .terms-privacy {
-  color: #f9f9f9;
+  color: var(--off-white);
   font-family: Saira Condensed;
   font-size: 20px;
   font-style: normal;
@@ -138,7 +137,7 @@ footer {
   justify-self: center;
 }
 .show-us {
-  color: #f9f9f9;
+  color: var(--off-white);
   font-family: Saira Condensed;
   font-size: 2rem;
   font-style: normal;
@@ -146,7 +145,7 @@ footer {
   line-height: normal;
 }
 .social-media {
-  fill: #f9f9f9;
+  fill: var(--off-white);
   display: flex;
   align-items: flex-start;
   gap: 20px;
@@ -162,10 +161,9 @@ footer {
   main {
     font-size: 1rem;
   }
-  section {
+  .normal-section {
     flex-direction: column;
     align-items: center;
-    margin: 1rem;
   }
   .footer-layout {
     grid-template-columns: 1fr;

@@ -1,10 +1,11 @@
 @import url(./often.css);
+
 .bluebar {
-  background-color: #0f172e;
+  background-color: var(--super-dark-blue);
   align-items: center;
   justify-content: center;
   display: flex;
-  color: #f9f9f9;
+  color: var(--off-white);
   gap: 2rem;
   padding: 3rem;
   flex-wrap: wrap;
@@ -30,8 +31,8 @@
   text-decoration: underline;
 }
 .fake-button {
-  background-color: #0f172e;
-  color: #f9f9f9;
+  background-color: var(--super-dark-blue);
+  color: var(--off-white);
   padding: 1rem;
   border-radius: 1rem;
   text-decoration: none;
@@ -39,7 +40,7 @@
   display: inline-block;
 }
 .fake-button-2 {
-  border: 4px solid #0f172e;
+  border: 4px solid var(--super-dark-blue);
   border-radius: 1rem;
   padding: 1rem;
   margin: 1rem;
@@ -47,7 +48,7 @@
   display: inline-block;
 }
 .link-heading{
-  color: #f9f9f9;
+  color: var(--off-white);
   text-decoration: none;
 }
 .link-heading:hover{
@@ -60,7 +61,7 @@
   justify-content: center;
 }
 .other-products {
-  border: 5px solid #0f172e;
+  border: 5px solid var(--super-dark-blue);
   border-radius: 1rem;
   text-transform: uppercase;
   text-align: center;

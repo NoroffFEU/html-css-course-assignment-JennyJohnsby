@@ -15,7 +15,7 @@ input {
   border-top: none;
   border-left: none;
   border-right: none;
-  background-color: #f9f9f9;
+  background-color: var(--off-white);
   margin: 12px;
 }
 .field-file {
@@ -40,8 +40,8 @@ input {
   font-size: 1rem;
 }
 .link-as-button {
-  background-color: #0f172e;
-  color: #f9f9f9;
+  background-color: var(--super-dark-blue);
+  color: var(--off-white);
   font-family: "Saira Condensed";
   font-size: 1.5rem;
   text-decoration: none;
