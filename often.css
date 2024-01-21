@@ -1,186 +1,176 @@
-body{
-    background-color: #f9f9f9;
-    color:#0F172E ;
-    font-family: "Saira Condensed", sans-serif;
-    margin:0px; 
-    font-size: 1.25rem;
-    text-transform: uppercase; 
-    /*reset (change if needed)*/
+body {
+  background-color: #f9f9f9;
+  color: #0f172e;
+  font-family: "Saira Condensed", sans-serif;
+  margin: 0px;
+  font-size: 1.25rem;
+  text-transform: uppercase;
 }
 .header-img {
-    width: 100%;
-    height: 530px;
-    object-fit: cover;
-    margin: 0%;
-    display: block; 
-     /*img leave a little gap when default display property*/
-     /*change values if needed*/    
+  width: 100%;
+  height: 530px;
+  object-fit: cover;
+  margin: 0%;
+  display: block;
+  /*img leave a little gap when default display property*/
 }
-.header-img-container{
-    position: relative;
- }
- .header-logo{
-    position:absolute;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    top: 50%; 
-    width: 80%; 
-    max-width: 400px;
+.header-img-container {
+  position: relative;
 }
-section{
-    display: flex;
-    gap: 1rem;
-    margin: 10rem;
+.header-logo {
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  top: 50%;
+  width: 80%;
+  max-width: 400px;
 }
-section img{
-    align-self: center;
+section {
+  display: flex;
+  gap: 1rem;
+  margin: 10rem;
 }
-.header-logo{
-    position:absolute;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    top: 50%; 
+section img {
+  align-self: center;
 }
-.navigation{
-    background-color: #0F172E;
-    text-align: center;
-    font-size: 2rem;
-    line-height: normal;
-    padding: 20px 0;
-    top: 0;
-    width: 100%;
+.header-logo {
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  top: 50%;
 }
-.navigation a{
-    color: #f9f9f9;
-    text-decoration: none;
+.navigation {
+  background-color: #0f172e;
+  text-align: center;
+  font-size: 2rem;
+  line-height: normal;
+  padding: 20px 0;
+  top: 0;
+  width: 100%;
 }
-nav a:hover{
-    text-decoration: underline;
+.navigation a {
+  color: #f9f9f9;
+  text-decoration: none;
 }
-ul{
-    list-style: none;
-    margin: 0;
-    padding: 0;
+nav a:hover {
+  text-decoration: underline;
 }
-li{
-    display: inline;
-    margin: 50px;
-    font-size: 2rem;
-    font-style: normal;
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
 }
-main
-{
-    text-align: center;
-    color: #0F172E;
-    font-size: 1.25rem;
-    font-style: normal;
-    font-weight: 600 ;
-    
+li {
+  display: inline;
+  margin: 50px;
+  font-size: 2rem;
+  font-style: normal;
 }
-footer{
-    background-color:#905B3E;
-    position: relative;  
+main {
+  text-align: center;
+  color: #0f172e;
+  font-size: 1.25rem;
+  font-style: normal;
+  font-weight: 600;
 }
-.footer-layout{
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    margin: 0 1rem;
+footer {
+  background-color: #905b3e;
+  position: relative;
 }
-.overlay-text{
-    color: #f9f9f9;
-    font-size: 2rem;
-    font-style: normal;
-    font-weight: 700;
-    line-height: normal;
-    text-transform: uppercase;
-    grid-column: 1/-1;
-    justify-self: center;
-
+.footer-layout {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  margin: 0 1rem;
 }
-.free-shipping{
-    font-size: 20px;
-font-style: normal;
-font-weight: 600;
-line-height: normal;
-display: flex;
-gap: 0.5rem;
-justify-self: center;
-align-self: center;
-
-
+.overlay-text {
+  color: #f9f9f9;
+  font-size: 2rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  text-transform: uppercase;
+  grid-column: 1/-1;
+  justify-self: center;
 }
-.free-shipping p{
-    margin-block-end: 0;
-    margin-block-start: 0;
+.free-shipping {
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  display: flex;
+  gap: 0.5rem;
+  justify-self: center;
+  align-self: center;
 }
-.paymentmethods{
-    display: flex;
-    width: 287px;
-    height: 54px;
-    align-items: center;
-    gap: 30px;
-    flex-shrink: auto;
-    padding-bottom: 1.5rem;
+.free-shipping p {
+  margin-block-end: 0;
+  margin-block-start: 0;
 }
-.snakkeboble{
-    position: absolute;
-    justify-self: center;
-align-self: center;
-top: -65px;
-right: 1rem;
+.paymentmethods {
+  display: flex;
+  width: 287px;
+  height: 54px;
+  align-items: center;
+  gap: 30px;
+  flex-shrink: auto;
+  padding-bottom: 1.5rem;
 }
-.terms-privacy{
-    color: #F9F9F9;
-    font-family: Saira Condensed;
-    font-size: 20px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: normal; 
-    margin-block-end: 0;
-    margin-block-start: 0;
+.snakkeboble {
+  position: absolute;
+  justify-self: center;
+  align-self: center;
+  top: -65px;
+  right: 1rem;
 }
-.terms-wrapper{
-    background-color: #905B3E;
-    align-self: center;
-    justify-self: center;
+.terms-privacy {
+  color: #f9f9f9;
+  font-family: Saira Condensed;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  margin-block-end: 0;
+  margin-block-start: 0;
 }
-.show-us{
-    color: #F9F9F9;
-font-family: Saira Condensed;
-font-size: 2rem;
-font-style: normal;
-font-weight: 700;
-line-height: normal;
+.terms-wrapper {
+  background-color: #905b3e;
+  align-self: center;
+  justify-self: center;
 }
-.social-media{
-    fill: #F9F9F9;
-    display: flex;
-    align-items: flex-start;
-    gap: 20px;
-    padding-bottom: 50px;
-    padding-left: 50px;
+.show-us {
+  color: #f9f9f9;
+  font-family: Saira Condensed;
+  font-size: 2rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
 }
-.social-media-wrapper{
-    align-self: center;
-    justify-self: center;
+.social-media {
+  fill: #f9f9f9;
+  display: flex;
+  align-items: flex-start;
+  gap: 20px;
+  padding-bottom: 50px;
+  padding-left: 50px;
+}
+.social-media-wrapper {
+  align-self: center;
+  justify-self: center;
 }
 
-@media (max-width:1200px){
-    main{
+@media (max-width: 1200px) {
+  main {
     font-size: 1rem;
-    }
-    section{
-        flex-direction: column;
-        align-items: center;
-        margin: 1rem;
-    }
-    .footer-layout{
-        grid-template-columns: 1fr;  
-    }
-    .snakkeboble{
-        width:90px;
-    }
-    
+  }
+  section {
+    flex-direction: column;
+    align-items: center;
+    margin: 1rem;
+  }
+  .footer-layout {
+    grid-template-columns: 1fr;
+  }
+  .snakkeboble {
+    width: 90px;
+  }
 }
-
-
