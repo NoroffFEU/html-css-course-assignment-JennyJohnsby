@@ -1,9 +1,36 @@
 @import url(often.css);
 
-
-.round-img-bottom-left{
-    max-height: 271px;
-}
-.paragraf-min-width{
-    min-width: 250px;
-}
+#product-list {
+    list-style-type: none;
+    padding: 0 5rem 0 5rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+  
+  #product-list li {
+    width: 30%;
+    padding: 1rem;
+    border: 1px solid var(--super-dark-blue);
+    border-radius: 5px;
+    box-shadow: 0 2px 4px var(--super-dark-blue)(0, 0, 0, 0.1);
+    text-align: center;
+    transition: opacity 0.5s;
+  }
+  
+  #product-list li img {
+    max-width: 100%;
+    height: auto;
+    max-height: 200px;
+  }
+  
+  #product-list li h3 {
+    margin-top: 10px;
+    font-size: 1.5rem;
+  }
+  
+  .fade-out {
+    opacity: 0;
+    transition: opacity 0.5s;
+  }
+  
