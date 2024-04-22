@@ -1,45 +1,40 @@
 @import url(../often.css);
 .jacket-info {
   display: inline-block;
-  margin: 10px;
-  width: 400px; 
-  height: 300px;
+  margin: 20px;
+  width: 300px;
+  max-height: 400px;
+  padding: 20px;
 }
 .title {
-  font-size: 1.55rem; 
+  font-size: 1.25rem;
   margin-bottom: 5px;
+  cursor: pointer;
 }
 .title:hover {
   text-decoration: underline;
-  cursor: pointer;
 }
 .info {
   font-size: 1rem;
   margin: 2px;
 }
 .price {
-  text-decoration: underline;
+  font-weight: bold;
 }
-
 .image {
-  max-width: 100%;
-  height: 100%;
-  margin-top: 30px;
+  width: 300px;
+  height: 350px;
+  margin-top: 10px;
+  border-radius: 5px;
 }
-.description {
-  font-size: 0.55rem; 
-  color: var(--super-dark-blue);
-  margin-top: 10px; 
-}
-
 .loading-icon {
-  display: none; 
+  display: none;
   width: 50px;
   height: 50px;
   background-color: #fff;
   border-radius: 50%;
-  border: 3px solid #ccc; 
-  border-top: 3px solid #3498db; 
+  border: 3px solid #ccc;
+  border-top: 3px solid #3498db;
   animation: spin 1s linear infinite;
   position: fixed;
   top: 50%;
@@ -47,6 +42,40 @@
   transform: translate(-50%, -50%);
 }
 @keyframes spin {
-  0% { transform: rotate(0deg); }
-  100% { transform: rotate(360deg); }
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+#cart {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  width: 300px;
+  max-height: 80vh;
+  overflow-y: auto;
+  background-color: #82b7dbf3;
+  padding: 20px;
+  border-top-left-radius: 10px;
+}
+.cart-item {
+  display: flex;
+  align-items: center;
+  border-bottom: 2px solid black;
+  padding: 10px 10px;
+}
+.cart-item:last-child {
+  border-bottom: none;
+}
+.remove-btn {
+  margin-left: 10px;
+}
+.product-title {
+}
+#total-price {
+  font-weight: bold;
+  text-align: right;
+  margin-top: 20px;
 }
