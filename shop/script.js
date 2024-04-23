@@ -1,11 +1,21 @@
 document.addEventListener("DOMContentLoaded", async function () {
   try {
-    // Fetch data from API
+    // Fetch product data from the API
     const res = await fetch("https://api.noroff.dev/api/v1/rainy-days");
-    const data = await res.json();
-    let allProducts = data;
+    const allProducts = await res.json();
     const section = document.querySelector("#jacket-info");
-    const cart = [];
+    const cartPopup = document.getElementById("cart-popup");
+    const toggleCartBtn = document.getElementById("toggle-cart-btn");
+    const cartItems = document.getElementById("cart-items");
+    const totalPriceDisplay = document.getElementById("total-price");
+
+    // Retrieve cart items from local storage, or initialize as an empty array if not found
+    let cart = JSON.parse(localStorage.getItem("cart")) || [];
+
+    // Function to save cart to local storage
+    function saveCart() {
+      localStorage.setItem("cart", JSON.stringify(cart));
+    }
 
     // Function to display products on the page
     function displayProducts(products) {
@@ -14,12 +24,10 @@ document.addEventListener("DOMContentLoaded", async function () {
         const jacketInfo = document.createElement("div");
         jacketInfo.classList.add("jacket-info");
 
-        // Create image container with link to product page
         const imageContainer = document.createElement("a");
         imageContainer.href = `../product/index.html?jacketId=${jacket.id}`;
         imageContainer.classList.add("image-container");
 
-        // Create image element
         const image = document.createElement("img");
         image.src = jacket.image;
         image.alt = jacket.title + " image";
@@ -27,7 +35,6 @@ document.addEventListener("DOMContentLoaded", async function () {
         imageContainer.appendChild(image);
         jacketInfo.appendChild(imageContainer);
 
-        // Create title element with click event to navigate to product page
         const title = document.createElement("h3");
         title.innerText = jacket.title;
         title.classList.add("title");
@@ -36,43 +43,39 @@ document.addEventListener("DOMContentLoaded", async function () {
         });
         jacketInfo.appendChild(title);
 
-        // Create dropdown menu for sizes
-        const sizes = document.createElement("select");
-        sizes.classList.add("sizes");
+        const sizeDropdown = document.createElement("select");
+        sizeDropdown.classList.add("size-dropdown");
         jacket.sizes.forEach((size) => {
           const option = document.createElement("option");
           option.value = size;
           option.text = size;
-          sizes.appendChild(option);
+          sizeDropdown.appendChild(option);
         });
-        jacketInfo.appendChild(sizes);
+        jacketInfo.appendChild(sizeDropdown);
 
-        // Create element for base color
         const baseColor = document.createElement("p");
         baseColor.innerText = "Base Color: " + jacket.baseColor;
         baseColor.classList.add("info");
         jacketInfo.appendChild(baseColor);
 
-        // Create element for price with click event to navigate to product page
         const price = document.createElement("p");
         price.innerText = "Price: $" + jacket.price;
         price.classList.add("info", "price");
-        price.addEventListener("click", function () {
-          navigateToProduct(jacket.id);
-        });
         jacketInfo.appendChild(price);
 
-        // Create "Add to Cart" button with click event to add product to cart
         const addToCartBtn = document.createElement("button");
         addToCartBtn.innerText = "Add to Cart";
         addToCartBtn.classList.add("add-to-cart-btn");
         addToCartBtn.addEventListener("click", function () {
-          const selectedSize = sizes.value;
-          if (selectedSize === "") {
+          const selectedSize = sizeDropdown.value;
+          if (!selectedSize) {
             alert("Please select a size before adding to cart.");
             return;
           }
-          addToCart({ ...jacket, size: selectedSize });
+          const productToAdd = { ...jacket, size: selectedSize };
+          cart.push(productToAdd);
+          saveCart();
+          updateCart();
         });
         jacketInfo.appendChild(addToCartBtn);
 
@@ -80,50 +83,9 @@ document.addEventListener("DOMContentLoaded", async function () {
       });
     }
 
-    // Display all products initially
-    displayProducts(allProducts);
-
-    // Filter products based on gender and price
-    const genderFilter = document.getElementById("gender-filter");
-    const priceFilter = document.getElementById("price-filter");
-
-    genderFilter.addEventListener("change", updateFilteredProducts);
-    priceFilter.addEventListener("input", updateFilteredProducts);
-
-    function updateFilteredProducts() {
-      const selectedGender = genderFilter.value;
-      const selectedPrice = priceFilter.value;
-
-      let filteredProducts = allProducts.filter((product) => {
-        if (selectedGender !== "all" && product.gender !== selectedGender) {
-          return false;
-        }
-        if (product.price > selectedPrice) {
-          return false;
-        }
-        return true;
-      });
-
-      // Display filtered products
-      displayProducts(filteredProducts);
-    }
-
-    // Add product to cart
-    function addToCart(product) {
-      cart.push(product);
-      updateCartSummary();
-    }
-
-    // Remove product from cart
-    function removeFromCart(productIndex) {
-      cart.splice(productIndex, 1);
-      updateCartSummary();
-    }
-
-    // Update cart summary
-    function updateCartSummary() {
-      const cartSummary = document.getElementById("cart-items");
-      cartSummary.innerHTML = "";
+    // Function to update the cart display
+    function updateCart() {
+      cartItems.innerHTML = "";
 
       cart.forEach((product, index) => {
         const cartItem = document.createElement("div");
@@ -138,25 +100,47 @@ document.addEventListener("DOMContentLoaded", async function () {
         removeBtn.innerText = "Remove";
         removeBtn.classList.add("remove-btn");
         removeBtn.addEventListener("click", function () {
-          removeFromCart(index);
+          cart.splice(index, 1);
+          saveCart();
+          updateCart();
         });
         cartItem.appendChild(removeBtn);
 
-        cartSummary.appendChild(cartItem);
+        cartItems.appendChild(cartItem);
       });
 
-      const totalPriceDisplay = document.getElementById("total-price");
-      const totalPrice = cart.reduce(
-        (total, product) => total + product.price,
-        0
-      );
+      const totalPrice = cart.reduce((total, product) => total + product.price, 0);
       totalPriceDisplay.innerText = "Total Price: $" + totalPrice.toFixed(2);
     }
 
-    // Navigate to product page
+    // Function to navigate to product page
     function navigateToProduct(productId) {
       window.location.href = `../product/index.html?jacketId=${productId}`;
     }
+
+    // Function to show cart popup
+    function showCartPopup() {
+      cartPopup.style.display = "block";
+    }
+
+    // Function to hide cart popup
+    function hideCartPopup() {
+      cartPopup.style.display = "none";
+    }
+
+    // Event listener for toggle cart button
+    toggleCartBtn.addEventListener("click", function () {
+      if (cartPopup.style.display === "none" || cartPopup.style.display === "") {
+        showCartPopup();
+      } else {
+        hideCartPopup();
+      }
+    });
+
+    // Display products and cart on page load
+    displayProducts(allProducts);
+    updateCart();
+
   } catch (error) {
     console.error("Error fetching data:", error);
   }
