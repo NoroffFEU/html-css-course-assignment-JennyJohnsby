@@ -1,13 +1,39 @@
 @import url(../often.css);
-main {
-  padding: 4rem;
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
 }
-.jacket1 {
-  max-width: 310px;
-  width: 100%;
+
+h1 {
+  text-align: center;
+  margin-bottom: 20px;
 }
-@media (max-width: 1200px) {
-  main {
-    padding: 1rem;
-  }
+#order-details {
+  border-radius: 5px;
+  padding: 20px;
+}
+.cart-item {
+  border: 1px solid #a8a7a7;
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+  padding: 12px;
+}
+.cart-item img {
+  width: 80px;
+  height: 80px;
+  margin-right: 20px;
+}
+.cart-item h3 {
+  margin: 0;
+  margin-bottom: 5px;
+}
+.cart-item p {
+  margin: 15px;
+}
+.total-price {
+  margin-top: 20px;
+  font-weight: bold;
+  font-size: rem;
 }
