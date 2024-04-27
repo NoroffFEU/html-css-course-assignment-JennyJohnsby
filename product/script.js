@@ -11,7 +11,7 @@ document.addEventListener("DOMContentLoaded", async function() {
 
       const jacketDetails = document.getElementById('jacket-details');
       jacketDetails.innerHTML = `
-          <h2>${jacketData.title}</h2>
+          <h1>${jacketData.title}</h1>
           <img src="${jacketData.image}" alt="${jacketData.title} image">
           <p>Description: ${jacketData.description}</p>
           <p>Gender: ${jacketData.gender}</p>
