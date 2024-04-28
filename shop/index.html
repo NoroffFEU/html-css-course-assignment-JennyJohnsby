@@ -38,33 +38,37 @@
       </nav>
     </header>
     <main>
-      <div id="loading-icon" class="loading-icon"></div>
-<section id="jacket-info"></section>
-<section id="filters">
-  <label for="gender-filter">Gender:</label>
-  <select id="gender-filter">
-    <option value="all">All</option>
-    <option value="Male">Men</option>
-    <option value="Female">Women</option>
-  </select>
-  <label for="price-filter">Price Range:</label>
-  <input
-    type="range"
-    id="price-filter"
-    min="0"
-    max="300"
-    step="10"
-    value="300"
-  />
-  <span id="price-range-value">$0 - $300</span>
-</section>
-<button id="toggle-cart-btn">Shopping Cart</button>
-<div id="cart-popup" class="cart-popup">
-  <div id="cart-items" class="cart-items"></div>
-  <p id="total-price" class="total-price">Total Price: $0</p>
-  <button id="checkout-btn">Go to Checkout</button>
-</div>
-<div class="jacket-details" id="jacket-details"></div>
+      <div id="loading-indicator" class="loading-indicator">
+      </div>
+      <section id="filters">
+        <label for="gender-filter">Gender:</label>
+        <select id="gender-filter">
+          <option value="all">All</option>
+          <option value="Male">Men</option>
+          <option value="Female">Women</option>
+        </select>
+        <label for="price-filter">Price Range:</label>
+        <input
+          type="range"
+          id="price-filter"
+          min="0"
+          max="300"
+          step="10"
+          value="300"
+        />
+        <span id="price-range-value">$0 - $300</span>
+      </section>
+      <section id="jacket-info"></section>
+      <button id="toggle-cart-btn">Shopping Cart</button>
+      <div id="cart-popup" class="cart-popup">
+        <div id="cart-items" class="cart-items"></div>
+        <p id="total-price" class="total-price">Total Price: $0</p>
+        <button id="checkout-btn">Go to Checkout</button>
+      </div>
+      <div id="popup" class="popup">
+        <span id="popup-text"></span>
+      </div>
+      
       <section class="normal-section">
         <div>
           <h1>Sign up for our newsletter today!</h1>
