@@ -16,7 +16,7 @@ async function displayRandomProducts() {
     const productList = document.getElementById("products");
     productList.innerHTML = "";
     const randomIndices = [];
-    while (randomIndices.length < 4) {
+    while (randomIndices.length < 3) {
       const randomIndex = Math.floor(Math.random() * allProducts.length);
       if (!randomIndices.includes(randomIndex)) {
         randomIndices.push(randomIndex);
@@ -25,20 +25,24 @@ async function displayRandomProducts() {
     randomIndices.forEach((index) => {
       const product = allProducts[index];
       const listItem = document.createElement("li");
+      const productLink = document.createElement("a");
+      productLink.href = "./shop/index.html";
+      productLink.classList.add("product-link");
       const productImage = document.createElement("img");
       productImage.src = product.image;
       productImage.alt = product.title;
-      listItem.appendChild(productImage);
+      productLink.appendChild(productImage);
       const productTitle = document.createElement("h3");
       productTitle.innerText = product.title;
-      listItem.appendChild(productTitle);
+      productLink.appendChild(productTitle);
+      listItem.appendChild(productLink);
       productList.appendChild(listItem);
     });
     loadingIndicator.style.display = "none";
     const carousel = document.querySelector(".carousel");
     const prevButton = document.querySelector(".prev");
     const nextButton = document.querySelector(".next");
-    let scrollAmount = 0;
+    let scrollAmount = 5;
     const step = 500;
     prevButton.addEventListener("click", function () {
       scrollAmount -= step;
