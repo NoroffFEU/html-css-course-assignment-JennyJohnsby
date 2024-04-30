@@ -1,27 +1,43 @@
 @import url(often.css);
+#product-list {
+  position: relative;
+}
+.products-container {
+  position: relative;
+}
 #products {
-  list-style-type: none;
-  padding: 0;
-  margin: 0;
+  display: flex;
+  transition: opacity 1s ease;
+  opacity: 0;
+  justify-content: center;
+}
+#products.hidden {
+  opacity: 0;
+}
+#products:not(.hidden) {
+  opacity: 1;
 }
 #products li {
-  display: inline-block;
-  margin: 0 1.5rem 0 1.5rem;
-  transition: transform 0.3s ease;
+  flex: 0 0 auto;
+  margin-right: 1.5rem; 
+  opacity: 0;
+  transition: opacity 0.5s ease, transform 0.5s ease;
+  transform: translateY(20px);
 }
 #products li img {
   max-width: auto;
-  height: 300px;
+  height: 400px;
   display: block;
-  transition: transform 0.3s ease;
 }
+
 #products li h3 {
   font-size: 1.25rem;
   margin-top: 5px;
   color: #0f172e;
 }
 #products li:hover {
-  transform: translateY(+20px);
+  transform: translateY(0);
+  opacity: 1;
 }
 #products li:hover img {
   transform: scale(1.1);
@@ -33,6 +49,7 @@
 .carousel {
   display: flex;
   overflow-x: hidden;
+  position: relative;
 }
 .carousel img {
   width: 100%;
@@ -61,7 +78,7 @@
   right: 10px;
 }
 #loading {
-  position: fixed;
+  position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
@@ -70,7 +87,11 @@
   padding: 20px;
   border-radius: 8px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
+
 #loading::after {
   content: "";
   display: inline-block;
@@ -81,6 +102,7 @@
   border-top-color: transparent;
   animation: spin 1s linear infinite;
 }
+
 @keyframes spin {
   0% {
     transform: rotate(0deg);
