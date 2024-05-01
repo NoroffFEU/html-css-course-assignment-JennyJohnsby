@@ -20,6 +20,7 @@
 }
 .price {
   font-weight: bold;
+  text-decoration: underline;
 }
 .image {
   width: 300px;
@@ -52,43 +53,42 @@
 .cart-popup {
   display: none;
   position: fixed;
-  top: 50px;
+  top: 92px;
   right: 40px;
-  background-color: #0f172ec7;
+  background-color: #333e5c;
   padding: 15px;
   max-width: 450px;
   overflow-y: auto;
-  z-index: 999;
+  z-index: 1000;
   border-radius: 5px;
 }
 .cart-items {
   color: white;
   font-size: 1rem;
-  text-align: start;
 }
 .total-price {
   margin-top: 10px;
   font-weight: bold;
   color: white;
+  font-size: 1.25rem;
+  text-decoration: underline;
 }
 #toggle-cart-btn {
   position: fixed;
-  top: 10px;
+  top: 30px;
   right: 40px;
   z-index: 1000;
-  background-color: #905b3ecb;
-  font-size: 1.5rem;
-  color: white;
+  font-size: 1rem;
   padding: 5px;
   border-radius: 5px;
+  height: 50px;
+  width: 50px;
 }
 #toggle-cart-btn:hover {
-  background-color: #8f5827ef;
+  background-color:  #333e5c;
 }
 #checkout-btn {
-  display: block;
-  margin-top: 5px;
-  padding: 3px;
+  padding: 5px;
   background-color: #51a139;
   color: white;
   font-size: 1rem;
@@ -97,14 +97,18 @@
   cursor: pointer;
 }
 #checkout-btn:hover {
-  background-color: #66903e;
+  background-color: #48903e;
 }
 .cart-item {
-  margin-bottom: 5px;
-  text-decoration: underline;
+  margin: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 2px solid #9ba3ba;
 }
+
 .remove-btn {
-  margin-left: 15px;
+  margin-left: 20px;
   background-color: #dc3545;
   color: white;
   border: none;
@@ -115,13 +119,14 @@
 .remove-btn:hover {
   background-color: #bd2130;
 }
+
 .popup {
   display: none;
   position: fixed;
-  top: 0;
+  top: 125px;
   left: 0;
   right: 0;
-  background-color: #0f172e93;
+  background-color: #0f172eb6;
   color: white;
   text-align: center;
   padding: 10px 0;
