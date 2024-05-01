@@ -1,43 +1,20 @@
 @import url(often.css);
-#product-list {
-  position: relative;
-}
 .products-container {
   position: relative;
 }
 #products {
   display: flex;
-  transition: opacity 1s ease;
-  opacity: 0;
   justify-content: center;
-}
-#products.hidden {
-  opacity: 0;
-}
-#products:not(.hidden) {
-  opacity: 1;
-}
-#products li {
-  flex: 0 0 auto;
-  margin-right: 1.5rem; 
-  opacity: 0;
-  transition: opacity 0.5s ease, transform 0.5s ease;
-  transform: translateY(20px);
 }
 #products li img {
   max-width: auto;
-  height: 400px;
-  display: block;
+  height: 350px;
+  margin: 20px;
 }
-
 #products li h3 {
   font-size: 1.25rem;
   margin-top: 5px;
   color: #0f172e;
-}
-#products li:hover {
-  transform: translateY(0);
-  opacity: 1;
 }
 #products li:hover img {
   transform: scale(1.1);
@@ -48,35 +25,20 @@
 }
 .carousel {
   display: flex;
-  overflow-x: hidden;
+  overflow-x: auto;
   position: relative;
+  scroll-snap-type: x mandatory;
 }
+
 .carousel img {
   width: 100%;
   height: auto;
-  max-width: 500px;
+  max-width: 600px;
   max-height: 400px;
   margin: 5px;
+  scroll-snap-align: start;
 }
-.prev,
-.next {
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  background-color: rgba(255, 255, 255, 0.5);
-  border: none;
-  outline: none;
-  cursor: pointer;
-  padding: 10px;
-  font-size: 18px;
-  z-index: 1;
-}
-.prev {
-  left: 10px;
-}
-.next {
-  right: 10px;
-}
+
 #loading {
   position: absolute;
   top: 50%;
@@ -87,7 +49,7 @@
   padding: 20px;
   border-radius: 8px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  display: flex;
+  display: block;
   justify-content: center;
   align-items: center;
 }
