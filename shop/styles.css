@@ -4,7 +4,6 @@
   margin: 20px;
   width: 300px;
   max-height: 400px;
-  padding: 20px;
 }
 .title {
   font-size: 1.25rem;
@@ -17,7 +16,7 @@
 .info {
   font-size: 1rem;
   margin: 2px;
-}
+} 
 .price {
   font-weight: bold;
   text-decoration: underline;

@@ -2,21 +2,19 @@
 #jacket-details {
   max-width: 600px;
   margin: 0 auto;
-  padding: 20px;
 }
 #jacket-details h2 {
-  font-size: 24px;
+  font-size: 2rem;
   color: var(--super-dark-blue);
   font-size: 2rem;
 }
 #jacket-details img {
   max-width: 100%;
-  height: auto;
-  margin-bottom: 20px;
+  height: 500px;
+
 }
 #jacket-details p {
   font-size: 1.5rem;
   color: var(--super-dark-blue);
-  margin-bottom: 10px;
 }
 

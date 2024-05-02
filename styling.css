@@ -2,27 +2,35 @@
 .products-container {
   position: relative;
 }
+
 #products {
   display: flex;
   justify-content: center;
+  flex-wrap: wrap;
 }
+
 #products li img {
-  max-width: auto;
+  max-width: 100%;
   height: 350px;
   margin: 20px;
+  transition: transform 0.3s ease;
 }
+
 #products li h3 {
   font-size: 1.25rem;
   margin-top: 5px;
   color: #0f172e;
 }
+
 #products li:hover img {
   transform: scale(1.1);
 }
+
 .img-gallery {
   position: relative;
   margin: 2rem;
 }
+
 .carousel {
   display: flex;
   overflow-x: auto;
@@ -37,4 +45,3 @@
   margin: 5px;
   scroll-snap-align: start;
 }
-
