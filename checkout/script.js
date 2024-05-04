@@ -52,6 +52,6 @@ document.addEventListener("DOMContentLoaded", function () {
       totalPrice: totalPrice,
     };
     localStorage.setItem("order", JSON.stringify(order));
-    window.location.href = "../checkout-confirmation/index.html";
+    window.location.href = "../checkout/confirmation/index.html";
   });
 });

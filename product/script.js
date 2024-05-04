@@ -1,6 +1,6 @@
 document.addEventListener("DOMContentLoaded", async function() {
   try {
-      const loadingIcon = document.getElementById('loading-icon');
+      const loadingIcon = document.getElementById('loading');
       loadingIcon.style.display = 'block';
 
       const params = new URLSearchParams(window.location.search);

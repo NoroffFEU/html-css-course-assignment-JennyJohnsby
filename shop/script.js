@@ -14,7 +14,6 @@ document.addEventListener("DOMContentLoaded", async function () {
     const totalPriceDisplay = document.getElementById("total-price");
     const genderFilter = document.getElementById("gender-filter");
     const priceFilter = document.getElementById("price-filter");
-    const checkoutBtn = document.getElementById("checkout-btn");
     let cart = JSON.parse(localStorage.getItem("cart")) || [];
     function saveCart() {
       localStorage.setItem("cart", JSON.stringify(cart));
@@ -50,12 +49,14 @@ document.addEventListener("DOMContentLoaded", async function () {
         image.classList.add("image");
         imageContainer.appendChild(image);
         jacketInfo.appendChild(imageContainer);
-        const title = document.createElement("h3");
-        title.innerText = jacket.title;
-        title.classList.add("title");
-        title.addEventListener("click", function () {
-          navigateToProduct(jacket.id);
-        });
+
+        const titleLink = document.createElement("a")
+        titleLink.href = `../product/index.html?jacketId=${jacket.id}`;
+        titleLink.innerText = jacket.title;
+        titleLink.classList.add("title");
+
+        const title = document.createElement("h3")
+        title.appendChild(titleLink)
         jacketInfo.appendChild(title);
         const sizeDropdown = document.createElement("select");
         sizeDropdown.classList.add("size-dropdown");
@@ -148,9 +149,7 @@ document.addEventListener("DOMContentLoaded", async function () {
         hideCartPopup();
       }
     });
-    checkoutBtn.addEventListener("click", function () {
-      window.location.href = "../checkout/index.html";
-    });
+  
     displayProducts(allProducts);
     updateCart();
   } catch (error) {
