@@ -3,13 +3,12 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="Jenny`s RainyDays home page" />
-    <title>Home | RainyDays</title>
-    <link rel="stylesheet" href="styling.css" />
-    <script defer src="script.js"></script>
+    <meta name="description" content="Jenny`s Rainy Days About page" />
+    <title>About | RainyDays</title>
+    <link rel="stylesheet" href="../about/styles.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link rel="icon" type="image/x-icon" href="./img/favicon-16x16.png" />
+    <link rel="icon" type="image/x-icon" href="../img/favicon-16x16.png" />
     <link
       href="https://fonts.googleapis.com/css2?family=Saira+Condensed:wght@600;700&display=swap"
       rel="stylesheet"
@@ -20,154 +19,226 @@
       <div class="header-img-container">
         <img
           class="header-img"
-          src="./img/Header_home.png"
-          alt="A person infront of a sunset on a mountain"
+          src="../img/header_about.png.jpg"
+          alt="A mountain with a moon over it"
         />
         <img
-          src="./img/logo_hvit.png"
+          src="../img/logo_hvit.png"
           alt="Raiy days Logo"
           class="header-logo"
         />
       </div>
       <nav class="navigation">
         <ul>
-          <li><a href="index.html">Home</a></li>
-          <li><a href="./shop/index.html">Shop</a></li>
-          <li><a href="./about/index.html">About</a></li>
+          <li><a href="../index.html">Home</a></li>
+          <li><a href="../shop/index.html">Shop</a></li>
+          <li><a href="../about/index.html">About</a></li>
         </ul>
       </nav>
     </header>
     <main>
       <section class="normal-section">
-        <div class="paragraf-min-width">
-          <h1>
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="56"
-              height="51"
-              viewBox="0 0 56 51"
-              fill="none"
-            >
-              <g clip-path="url(#clip0_45_882)">
-                <path
-                  d="M22.5517 40.6938L21.1517 49.1406C21.068 49.643 20.7894 50.1014 20.3665 50.4328C19.9436 50.7641 19.4043 50.9465 18.8463 50.9469C18.7283 50.9468 18.6105 50.9382 18.494 50.9214C17.8828 50.8365 17.3336 50.5341 16.9669 50.0807C16.6003 49.6273 16.4463 49.0599 16.5387 48.5031L17.9387 40.0563C17.9793 39.7762 18.0809 39.5063 18.2374 39.2625C18.3939 39.0186 18.6022 38.8055 18.8502 38.6359C19.0982 38.4662 19.3809 38.3432 19.6816 38.2742C19.9824 38.2051 20.2953 38.1914 20.602 38.2338C20.9086 38.2762 21.2029 38.3738 21.4677 38.521C21.7324 38.6682 21.9623 38.862 22.1438 39.091C22.3254 39.3201 22.455 39.5798 22.525 39.855C22.595 40.1302 22.6041 40.4153 22.5517 40.6938ZM49.112 17V48.875C49.112 49.4386 48.8662 49.9791 48.4286 50.3776C47.991 50.7761 47.3975 51 46.7787 51C46.1598 51 45.5663 50.7761 45.1288 50.3776C44.6912 49.9791 44.4453 49.4386 44.4453 48.875V25.5H37.4453C37.0117 25.5002 36.5866 25.3903 36.2178 25.1828C35.8489 24.9752 35.5508 24.6781 35.357 24.3249L33.8707 21.6155L32.7997 26.9705C32.7019 27.4598 32.4189 27.9023 31.9998 28.2211C31.5807 28.5399 31.0521 28.7147 30.506 28.7151C30.3652 28.7142 30.2248 28.7028 30.086 28.6811C29.4787 28.5779 28.9411 28.2595 28.5912 27.7958C28.2413 27.3321 28.1075 26.761 28.2193 26.2076L30.058 17.0191C30.0043 17.0191 29.9553 17 29.904 17H25.4007L23.1 28.39C23.0048 28.8095 23.051 29.2453 23.2325 29.6405C23.4141 30.0356 23.7225 30.3715 24.1173 30.6043L34.0387 36.4671C34.3648 36.6602 34.6327 36.9244 34.8181 37.2358C35.0036 37.5471 35.1006 37.8958 35.1003 38.25V48.875C35.1003 49.4386 34.8545 49.9791 34.4169 50.3776C33.9793 50.7761 33.3858 51 32.767 51C32.1482 51 31.5547 50.7761 31.1171 50.3776C30.6795 49.9791 30.4337 49.4386 30.4337 48.875V39.4039L21.567 34.17C20.9012 33.7718 20.3149 33.2731 19.8333 32.6953C18.4982 33.5634 16.8934 34.0206 15.253 34C11.354 34 7.15634 31.3395 7.15634 25.5C7.15634 18.3515 14.2427 12.75 23.289 12.75H29.8947C31.1973 12.7441 32.4757 13.0712 33.5844 13.694C34.6932 14.3168 35.5878 15.2104 36.1667 16.2733L38.8873 21.25H44.4453V17C44.4453 16.4364 44.6912 15.8959 45.1288 15.4974C45.5663 15.0989 46.1598 14.875 46.7787 14.875C47.3975 14.875 47.991 15.0989 48.4286 15.4974C48.8662 15.8959 49.112 16.4364 49.112 17ZM18.613 27.1851L20.5987 17.2486C15.9413 18.0795 11.823 21.0375 11.823 25.5C11.823 29.5375 14.6813 29.75 15.253 29.75C16.0512 29.7384 16.8207 29.4772 17.4325 29.0102C18.0442 28.5432 18.4611 27.8988 18.613 27.1851ZM30.4453 10.625C31.5991 10.625 32.7269 10.3134 33.6862 9.72968C34.6455 9.14594 35.3931 8.31624 35.8346 7.34551C36.2761 6.37478 36.3917 5.30661 36.1666 4.27609C35.9415 3.24556 35.3859 2.29896 34.5701 1.556C33.7543 0.813031 32.7149 0.307065 31.5834 0.102081C30.4518 -0.102903 29.2789 0.00230182 28.213 0.404392C27.1471 0.806483 26.2361 1.4874 25.5951 2.36104C24.9541 3.23467 24.612 4.26179 24.612 5.3125C24.612 6.72147 25.2266 8.07272 26.3206 9.06901C27.4145 10.0653 28.8982 10.625 30.4453 10.625Z"
-                  fill="#0A0D16"
-                />
-              </g>
-              <defs>
-                <clipPath id="clip0_45_882">
-                  <rect width="56" height="51" fill="white" />
-                </clipPath>
-              </defs>
-            </svg>
-            Push YOUR comfort zone
-          </h1>
-          <p>
-            Our mid-range priced jackets prioritize durability and versatility,
-            ensuring they are well-suited for various weather conditions. We
-            take pride in offering our customers the comfort they deserve, no
-            matter the adventure they embark on. Whether you're facing rain,
-            wind, or changing weather patterns, our jackets are designed to keep
-            you at ease throughout your outdoor journeys.
-          </p>
-        </div>
-      </section>
-      <section id="product-list">
-        <h2>Featured Products</h2>
-        <div class="products-container">
-          <ul id="products"></ul>
-          <div id="loading" class="loading"></div>
-        </div>
-        <a href="./shop/index.html"></a>
-      </section>
-      <section class="img-gallery">
-        <h2>Image Gallery</h2>
-        <div class="carousel">
-          <img
-            src="./img/greg-rakozy-zGORXMe0Wlc-unsplash-min.jpg"
-            alt="a person climbing a wall of ice"
-          />
-          <img
-            src="./img/mael-balland-3iIzEJ_YCJs-unsplash-min.jpg"
-            alt="a view from a mountain with a climber"
-          />
-          <img
-            src="./img/mael-balland-8r5yT-knBvg-unsplash-min.jpg"
-            alt="a group of people on a mountain hike"
-          />
-          <img
-            src="./img/venti-views-G16PnHWOMRQ-unsplash-min.jpg"
-            alt="a view over a city on a summer day"
-          />
-          <img
-            src="./img/agung-permana-qzmN8tlHNUo-unsplash-min.jpg"
-            alt="one hiker folling a track on a mountain"
-          />
-          <img
-            src="./img/colton-duke-QRU0i5AqEJA-unsplash-min.jpg"
-            alt="a hiker on a sunset"
-          />
-          <img
-            src="./img/daniel-j-schwarz-eqZGl9kJVXI-unsplash-min.jpg"
-            alt="a mountain view with some hikers"
-          />
-          <img
-            src="./img/holly-mandarich-7MrXw_o7Eo4-unsplash-min.jpg"
-            alt="hikers on a summerday"
-          />
-          <img
-            src="./img/lucas-favre-GzcI_rMNclY-unsplash-min.jpg"
-            alt="a woman on a hike"
-          />
-          <img
-            src="./img/lucas-favre-WK4lhYGRIzw-unsplash-min.jpg"
-            alt="a silouette of a person on a hike"
-          />
-          <img
-            src="./img/luo-lei-oN8uyGr_kME-unsplash-min.jpg"
-            alt="a person enjoying the view"
-          />
-          <img
-            src="./img/mukuko-studio-tPKQwYHy8q4-unsplash-min.jpg"
-            alt="a hiker in the sunset"
-          />
-          <img
-            src="./img/sheshan-r-4AU8t0aQHVI-unsplash-min.jpg"
-            alt="a person on a hike on a glacier"
-          />
-        </div>
-      </section>
-      <section class="normal-section">
-        <div class="paragraf-min-width">
-          <h1>
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="56"
-              height="51"
-              viewBox="0 0 56 51"
-              fill="none"
-            >
+        <div>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="80"
+            height="81"
+            viewBox="0 0 80 81"
+            fill="none"
+          >
+            <g clip-path="url(#clip0_218_389)">
               <path
-                d="M32.6807 51C32.3636 51.0012 32.0497 50.9426 31.7588 50.8278C31.1885 50.6057 30.7387 50.187 30.5083 49.6637C30.2779 49.1404 30.2858 48.5555 30.5302 48.0375L37.5504 33.1611C37.6685 32.9007 37.8424 32.6642 38.062 32.4654C38.2817 32.2666 38.5426 32.1094 38.8297 32.003C39.1169 31.8966 39.4244 31.843 39.7345 31.8455C40.0446 31.848 40.351 31.9064 40.6361 32.0174C40.9211 32.1283 41.1789 32.2897 41.3947 32.4919C41.6105 32.6942 41.7798 32.9334 41.8929 33.1957C42.006 33.4579 42.0605 33.738 42.0534 34.0195C42.0463 34.3011 41.9776 34.5785 41.8513 34.8358L34.8312 49.7121C34.6508 50.0943 34.3509 50.4201 33.9687 50.649C33.5864 50.8779 33.1386 50.9999 32.6807 51ZM23.3206 51C23.0035 51.0012 22.6895 50.9426 22.3986 50.8278C21.8283 50.6057 21.3785 50.187 21.1481 49.6637C20.9177 49.1404 20.9256 48.5555 21.1701 48.0375L28.1902 33.1611C28.4405 32.6511 28.9018 32.251 29.4743 32.0474C30.0468 31.8438 30.6845 31.853 31.2496 32.073C31.8147 32.2931 32.2618 32.7062 32.4941 33.2232C32.7264 33.7402 32.7254 34.3195 32.4912 34.8358L25.4711 49.7121C25.2907 50.0943 24.9908 50.4201 24.6085 50.649C24.2263 50.8779 23.7785 50.9999 23.3206 51ZM13.9604 51C13.6433 51.0012 13.3294 50.9426 13.0385 50.8278C12.4682 50.6057 12.0184 50.187 11.788 49.6637C11.5576 49.1404 11.5655 48.5555 11.81 48.0375L18.8301 33.1611C19.0804 32.6511 19.5416 32.251 20.1141 32.0474C20.6866 31.8438 21.3244 31.853 21.8895 32.073C22.4546 32.2931 22.9016 32.7062 23.134 33.2232C23.3663 33.7402 23.3652 34.3195 23.1311 34.8358L16.1109 49.7121C15.9305 50.0943 15.6306 50.4201 15.2484 50.649C14.8661 50.8779 14.4183 50.9999 13.9604 51ZM9.28038 41.9552C9.01492 41.9556 8.75135 41.9146 8.50114 41.834C6.41998 41.141 4.56924 39.975 3.12572 38.4472C1.6822 36.9195 0.694124 35.0811 0.255885 33.1077C-0.182355 31.1343 -0.0561172 29.0919 0.622537 27.1754C1.30119 25.259 2.50959 23.5326 4.1323 22.1611C4.4334 21.9299 4.6653 21.6334 4.80643 21.299C4.94757 20.9646 4.99338 20.6032 4.93961 20.2485C4.51131 18.2224 4.48516 16.1432 4.86239 14.1088C5.49105 10.6904 7.26275 7.5305 9.93697 5.05808C12.6112 2.58567 16.0584 0.920508 19.8105 0.28867C23.8851 -0.399802 28.096 0.151185 31.7909 1.85628C35.4858 3.56138 38.4584 6.32543 40.2484 9.72027C40.4136 10.0317 40.657 10.3035 40.9589 10.5139C41.2609 10.7243 41.6131 10.8674 41.9871 10.9316C57.2581 13.5222 61.2222 32.5597 47.9893 39.9894C47.7306 40.1474 47.4397 40.2569 47.1338 40.3114C46.8278 40.3659 46.513 40.3643 46.2077 40.3068C45.9025 40.2493 45.6129 40.1369 45.3562 39.9763C45.0994 39.8158 44.8805 39.6102 44.7124 39.3717C44.5443 39.1333 44.4304 38.8667 44.3774 38.5877C44.3243 38.3087 44.3332 38.0228 44.4034 37.747C44.4737 37.4711 44.6039 37.2108 44.7865 36.9813C44.9691 36.7518 45.2004 36.5578 45.4667 36.4105C55.1638 31.0657 52.2154 16.9034 41.0721 15.097C39.9815 14.9082 38.9556 14.4879 38.078 13.8704C37.2004 13.2528 36.496 12.4556 36.0223 11.5437C34.7513 9.08947 32.6518 7.06723 30.0288 5.77076C27.4058 4.4743 24.396 3.97115 21.4366 4.33442C18.4772 4.69769 15.7225 5.90845 13.5726 7.7908C11.4227 9.67315 9.98961 12.129 9.48162 14.8016C9.19569 16.3366 9.21471 17.9056 9.53778 19.4345C9.74505 20.5068 9.64656 21.6093 9.25168 22.6372C8.85681 23.6651 8.17871 24.584 7.28199 25.3064C6.2501 26.1792 5.48171 27.2775 5.05015 28.4967C4.61859 29.7159 4.53826 31.0151 4.81682 32.2705C5.09539 33.5259 5.72356 34.6954 6.64138 35.6676C7.5592 36.6398 8.73605 37.3821 10.0596 37.8238C10.582 37.9896 11.0227 38.3182 11.3036 38.7511C11.5845 39.1841 11.6874 39.6935 11.594 40.1888C11.5006 40.6841 11.2169 41.1334 10.7933 41.4567C10.3698 41.7801 9.83372 41.9567 9.28038 41.9552Z"
+                d="M76.8233 58.0398L62.43 71.3204C55.66 77.5642 46.89 81 37.7367 81H3.33333C1.49 81 0 79.4913 0 77.625C0 75.7586 1.49 74.25 3.33333 74.25H37.7333C45.2233 74.25 52.3967 71.4386 57.9367 66.3288L72.2167 53.1596C73.3733 51.9851 73.65 49.9736 72.7367 48.6911C72.1367 47.8507 71.2633 47.3445 70.27 47.2601C69.3 47.196 68.3367 47.5368 67.6433 48.2388L53.53 61.3541C51.7367 63.0686 49.3233 64.125 46.6667 64.125H30C28.1567 64.125 26.6667 62.6163 26.6667 60.75C26.6667 58.8836 28.1567 57.375 30 57.375H46.6667C47.5067 57.375 50 56.9868 50 54C50 52.137 48.5067 50.625 46.6667 50.625H30.2933C22.2833 50.625 14.7467 53.7873 9.08 59.5215L5.75333 63.0753C5.09667 63.7739 4.21667 64.1283 3.33333 64.1283C2.51 64.1283 1.68333 63.8212 1.04 63.2036C-0.293333 61.9177 -0.35 59.7813 0.916667 58.4313L4.30667 54.8167C11.2967 47.7427 20.5033 43.8817 30.2967 43.8817H46.67C50.79 43.8817 54.3367 46.4197 55.8667 50.031L63.0367 43.3687C65.0067 41.3673 67.89 40.2806 70.8067 40.5371C73.74 40.7733 76.4167 42.309 78.15 44.7491C80.9633 48.7113 80.3933 54.4218 76.8267 58.0432L76.8233 58.0398ZM13.3533 7.2967C13.2133 5.33582 13.9267 3.40532 15.3133 2.0047C16.6967 0.600699 18.6033 -0.135051 20.5433 0.0201994C30.1333 0.705324 36.4933 4.05332 40 10.5232C43.51 4.05332 49.8667 0.705324 59.46 0.0201994C61.43 -0.141801 63.3067 0.600699 64.6867 2.0047C66.0733 3.40532 66.7867 5.33582 66.6467 7.30008C65.61 22.194 58.38 29.3895 43.3333 30.2771V33.7466C43.3333 35.613 41.8433 37.1216 40 37.1216C38.1567 37.1216 36.6667 35.613 36.6667 33.7466V30.2771C21.62 29.3861 14.39 22.194 13.3533 7.2967ZM43.44 23.517C54.6433 22.761 59.22 17.9921 60 6.8242C48.9033 7.54645 44.1867 12.1736 43.44 23.517ZM20.07 6.74995C20.7833 17.9853 25.3533 22.761 36.5567 23.517C35.81 12.1736 31.1 7.5397 20.07 6.74995Z"
                 fill="#0A0D16"
               />
-            </svg>
-            Where fashion meets function
-          </h1>
+            </g>
+            <defs>
+              <clipPath id="clip0_218_389">
+                <rect width="80" height="81" fill="white" />
+              </clipPath>
+            </defs>
+          </svg>
+          <h1>Sustainability in every step</h1>
+
           <p>
-            Explore our online collection of men's and women's rain jackets,
-            meticulously designed to meet your the needs. Our rain jackets blend
-            fashion and function seamlessly, making them ideal for a wide range
-            of outdoor pursuits that elevate your life's adventures. Stay
-            comfortably dry while enjoying the great outdoors with our
-            thoughtfully crafted rainwear
+            At Rainy Days, we're passionate about more than just stylish and
+            functional clothing – we're dedicated to making a positive impact on
+            our environment. We believe in a future where fashion coexists
+            harmoniously with nature. Our commitment to sustainability is
+            evident in every step of our process. From the careful selection of
+            eco-friendly materials to our low-impact manufacturing practices, we
+            take the well-being of our planet to heart. By choosing Rainy Days,
+            you're not just investing in quality clothing; you're joining a
+            movement towards a greener, more sustainable future. We're proud to
+            create products that are not only designed to protect you from the
+            elements but also designed to protect the Earth. With Rainy Days,
+            you can embrace the great outdoors with the confidence that your
+            attire is a responsible choice, leaving a smaller ecological
+            footprint while you explore the world.
           </p>
         </div>
+        <img
+          class="round-picture home"
+          src="../img/round_about.png"
+          alt="two people on a mountainhike in sunny weather"
+        />
+      </section>
+      <section class="normal-section">
+        <div>
+          <h1>Get in touch</h1>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="80"
+            height="81"
+            viewBox="0 0 80 81"
+            fill="none"
+          >
+            <path
+              d="M66.6667 1H13.3333C5.96667 1 0 7.04125 0 14.5V55C0 62.4588 5.96667 68.5 13.3333 68.5H23.0667L35.5667 79.165C36.8333 80.3125 38.4333 80.8863 40.0333 80.8863C41.6333 80.8863 43.1333 80.3463 44.3333 79.2325L57.1667 68.5H66.6667C74.0333 68.5 80 62.4588 80 55V14.5C80 7.04125 74.0333 1 66.6667 1ZM73.3333 55C73.3333 58.7125 70.3333 61.75 66.6667 61.75H55.9667C55.2 61.75 54.4333 62.02 53.8333 62.5263L39.9333 74.0688L26.4333 62.56C25.8333 62.0538 25.0667 61.75 24.3 61.75H13.3333C9.66667 61.75 6.66667 58.7125 6.66667 55V14.5C6.66667 10.7875 9.66667 7.75 13.3333 7.75H66.6667C70.3333 7.75 73.3333 10.7875 73.3333 14.5V55ZM59.1667 39.2725C60.4 40.6563 60.2667 42.7825 58.9 44.0313C58.5667 44.335 50.3667 51.625 40 51.625C29.6333 51.625 21.4667 44.335 21.1 44.0313C19.7333 42.7825 19.6 40.6563 20.8333 39.2725C22.0667 37.8888 24.1667 37.7538 25.5333 39.0025C25.6 39.07 32.2 44.9088 39.9667 44.9088C47.7333 44.9088 54.3667 39.07 54.4333 39.0025C55.8 37.7538 57.9333 37.8888 59.1333 39.2725H59.1667ZM23.3333 26.3125C23.3333 23.5113 25.5667 21.25 28.3333 21.25C31.1 21.25 33.3333 23.5113 33.3333 26.3125C33.3333 29.1138 31.1 31.375 28.3333 31.375C25.5667 31.375 23.3333 29.1138 23.3333 26.3125ZM46.6667 26.3125C46.6667 23.5113 48.9 21.25 51.6667 21.25C54.4333 21.25 56.6667 23.5113 56.6667 26.3125C56.6667 29.1138 54.4333 31.375 51.6667 31.375C48.9 31.375 46.6667 29.1138 46.6667 26.3125Z"
+              fill="#0F172E"
+            />
+          </svg>
+          <p>
+            Our customer support team is available to assist you during business
+            hours. Connect with us for any inquiries or assistance. Your
+            satisfaction is our priority.
+          </p>
+
+          <form action="Submission-sucsessful/" class="form">
+            <label for="cname"> Contact name:</label>
+            <input
+              type="text"
+              id="cname"
+              name="cname"
+              placeholder="Kari Norddame"
+              required
+            />
+
+            <label for="street"> Street:</label>
+            <input
+              type="text"
+              id="street"
+              name="street"
+              placeholder="Sesame street"
+            />
+
+            <label for="city">City:</label>
+            <input type="text" id="city" name="city" placeholder="New York" />
+
+            <label for="pcode">Postal Code:</label>
+            <input type="text" id="pcode" placeholder="9170" />
+
+            <label for="cphone">Contact Phone</label>
+            <input
+              type="text"
+              id="cphone"
+              name="cphone"
+              placeholder="12345678"
+              required
+            />
+
+            <label for="email">E-mail</label>
+            <input
+              type="text"
+              id="email"
+              name="email"
+              placeholder="kari@Norddame.com"
+              required
+            />
+
+            <div class="field-file">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+              >
+                <path
+                  d="M21 15V19C21 19.5304 20.7893 20.0391 20.4142 20.4142C20.0391 20.7893 19.5304 21 19 21H5C4.46957 21 3.96086 20.7893 3.58579 20.4142C3.21071 20.0391 3 19.5304 3 19V15"
+                  stroke="#0F172E"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+                <path
+                  d="M17 8L12 3L7 8"
+                  stroke="#0F172E"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+                <path
+                  d="M12 3V15"
+                  stroke="#0F172E"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+              <p>Upload Additional file</p>
+            </div>
+            <p class="attach-file form-weak-text">
+              Attach file. File size of your documents should not exceed 10MB
+            </p>
+            <div class="checkbox-label-wrapper">
+              <input
+                class="checkbox"
+                type="checkbox"
+                id="protect-my-data"
+                name="protect"
+                value="protect my data"
+              />
+              <label for="protect-my-data" class="form-weak-text"
+                >I want to protect my data by signing an NDA</label
+              >
+            </div>
+            <a href="../index.html" class="link-as-button">Submit</a>
+          </form>
+
+          <div class="contact-wrapper form-weak-text">
+            <div class="icon-text-wrapper">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="29"
+                height="29"
+                viewBox="0 0 29 29"
+                fill="none"
+              >
+                <path
+                  d="M16.2047 0.424194V2.35263C18.1121 2.35263 19.899 2.83474 21.5654 3.79896C23.1516 4.74309 24.4165 6.00863 25.3601 7.59557C26.3238 9.26286 26.8057 11.0507 26.8057 12.959H28.7332C28.7332 10.6891 28.1609 8.57988 27.0165 6.63135C25.9122 4.74309 24.4165 3.24654 22.5292 2.14171C20.5816 0.996699 18.4735 0.424194 16.2047 0.424194ZM6.23611 3.31685C5.69401 3.31685 5.22219 3.4876 4.82064 3.82909L1.71863 6.99293L1.80898 6.93267C1.30704 7.35451 0.97576 7.8768 0.815138 8.49952C0.674594 9.12225 0.71475 9.72488 0.935604 10.3074C1.49778 11.8743 2.25069 13.4813 3.19434 15.1285C4.51947 17.3985 6.09557 19.4374 7.92264 21.2453C10.854 24.1982 14.4981 26.5284 18.8549 28.2359H18.8851C19.4673 28.4368 20.0496 28.4769 20.6318 28.3564C21.2341 28.2359 21.7662 27.9747 22.228 27.573L25.2698 24.5297C25.6713 24.1279 25.8721 23.6357 25.8721 23.0532C25.8721 22.4506 25.6713 21.9484 25.2698 21.5466L21.3245 17.5692C20.9229 17.1674 20.421 16.9666 19.8187 16.9666C19.2163 16.9666 18.7144 17.1674 18.3128 17.5692L16.4155 19.4976C14.8896 18.7745 13.5645 17.8806 12.4401 16.8159C11.3158 15.7312 10.4223 14.4154 9.75975 12.8686L11.6872 10.9402C12.1088 10.4983 12.3196 9.97598 12.3196 9.37335C12.3196 8.75062 12.0787 8.24843 11.5969 7.86676L11.6872 7.95715L7.65159 3.82909C7.25003 3.4876 6.77821 3.31685 6.23611 3.31685ZM16.2047 4.28107V6.20951C17.4294 6.20951 18.5538 6.51082 19.5777 7.11346C20.6218 7.7161 21.445 8.5397 22.0473 9.58427C22.6496 10.6088 22.9508 11.7337 22.9508 12.959H24.8782C24.8782 11.3922 24.4867 9.93581 23.7037 8.58992C22.9207 7.28421 21.8766 6.23964 20.5716 5.45621C19.2264 4.67278 17.7707 4.28107 16.2047 4.28107ZM6.23611 5.24529C6.29635 5.24529 6.36662 5.27542 6.44693 5.33568L10.3922 9.37335C10.4123 9.4537 10.3922 9.52401 10.332 9.58427L7.47089 12.4167L7.6817 13.0193L8.07322 13.863C8.39446 14.546 8.7659 15.2089 9.18753 15.8517C9.76978 16.7556 10.4123 17.529 11.115 18.1718C12.0586 19.0959 13.193 19.9396 14.5182 20.7029C15.1807 21.0846 15.7429 21.3658 16.2047 21.5466L16.807 21.8178L19.7283 18.895C19.7685 18.8548 19.7986 18.8347 19.8187 18.8347C19.8387 18.8347 19.8689 18.8548 19.909 18.895L23.9747 22.9628C24.0149 23.003 24.035 23.0331 24.035 23.0532C24.035 23.0532 24.0149 23.0733 23.9747 23.1135L20.9631 26.0965C20.5214 26.4782 20.0395 26.5786 19.5175 26.3978C15.4217 24.8109 12.0084 22.6414 9.27788 19.8894C7.59136 18.202 6.11565 16.2836 4.85075 14.1342C3.94726 12.5874 3.24454 11.0909 2.7426 9.64453V9.6144C2.66228 9.43361 2.65225 9.22269 2.71248 8.98163C2.77271 8.72049 2.88314 8.51961 3.04376 8.379L6.0253 5.33568C6.08553 5.27542 6.1558 5.24529 6.23611 5.24529ZM16.2047 8.13794V10.0664C17.0078 10.0664 17.6904 10.3476 18.2526 10.9101C18.8148 11.4725 19.0959 12.1555 19.0959 12.959H21.0233C21.0233 12.0953 20.8025 11.2917 20.3608 10.5485C19.9391 9.80524 19.3569 9.22269 18.614 8.80084C17.8711 8.35891 17.068 8.13794 16.2047 8.13794Z"
+                  fill="black"
+                />
+              </svg>
+              <p>Phone 12345678</p>
+            </div>
+            <div class="icon-text-wrapper">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="28"
+                height="28"
+                viewBox="0 0 28 28"
+                fill="none"
+              >
+                <path
+                  d="M7.95455 2.625V4.59624L1.75 8.63565V25.375H26.5682V8.63565L20.3636 4.59624V2.625H7.95455ZM10.0227 4.69318H18.2955V12.6428L14.1591 15.3249L10.0227 12.6428V4.69318ZM11.0568 6.76136V8.82955H17.2614V6.76136H11.0568ZM7.95455 7.0522V11.2855L4.6907 9.18501L7.95455 7.0522ZM20.3636 7.0522L23.6275 9.18501L20.3636 11.2855V7.0522ZM11.0568 9.86364V11.9318H17.2614V9.86364H11.0568ZM3.81818 11.0916L14.1591 17.7809L24.5 11.0916V23.3068H3.81818V11.0916Z"
+                  fill="black"
+                />
+              </svg>
+              <p>E-MAIL Rainy_days@email.com</p>
+            </div>
+          </div>
+        </div>
+        <img
+          class="map"
+          src="../img/Map.png"
+          alt="A map showing where our headquarter is"
+        />
       </section>
     </main>
+
     <footer class="footer">
       <div class="footer-layout">
-        <p class="overlay-text">Ready for your next adventure?</p>
+        <p class="overlay-text">
+          STAY FASIONABLE & COMFORTABLE ON YOUR NEXT ADVENTURE
+        </p>
         <div class="social-media-wrapper">
           <p class="show-us">SHOW US YOUR ADVENTURE ON</p>
           <div class="social-media">

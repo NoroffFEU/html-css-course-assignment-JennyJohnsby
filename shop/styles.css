@@ -1,0 +1,149 @@
+@import url(../often.css);
+.jacket-info {
+  display: inline-block;
+  margin: 30px;
+  width: 300px;
+  max-height: 300px;
+}
+.title {
+  font-size: 1.25rem;
+  margin-bottom: 5px;
+  cursor: pointer;
+  color: #0f172e;
+  text-decoration: none;
+  margin-right: 0px;
+}
+.title:hover {
+  text-decoration: underline;
+}
+.info {
+  font-size: 1rem;
+  margin: 2px;
+}
+.price {
+  font-weight: bold;
+  text-decoration: underline;
+}
+datalist {
+  display: flex;
+  justify-content: space-between;
+}
+.price-range {
+  display: inline-flex;
+  flex-direction: column;
+  max-width: 150px;
+}
+.image {
+  width: 300px;
+  height: 350px;
+  padding: 10px;
+  border-radius: 5px;
+  border: 3px solid #905b3e;
+}
+.loading-indicator {
+  width: 100px;
+  height: 100px;
+  background-color: #ffffff00;
+  border-radius: 50%;
+  border: 10px solid rgb(150, 149, 149);
+  border-top: 10px solid #3498db;
+  animation: spin 1s linear infinite;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 999;
+}
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+.cart-popup {
+  display: none;
+  position: fixed;
+  top: 92px;
+  right: 40px;
+  background-color: #333e5c;
+  padding: 15px;
+  max-width: 450px;
+  overflow-y: auto;
+  z-index: 1000;
+  border-radius: 5px;
+}
+.cart-items {
+  color: white;
+  font-size: 1rem;
+}
+.total-price {
+  margin-top: 10px;
+  font-weight: bold;
+  color: white;
+  font-size: 1.25rem;
+  text-decoration: underline;
+}
+#toggle-cart-btn {
+  position: fixed;
+  top: 30px;
+  right: 40px;
+  z-index: 1000;
+  font-size: 1rem;
+  padding: 5px;
+  border-radius: 5px;
+  height: 50px;
+  width: 50px;
+}
+#toggle-cart-btn:hover {
+  background-color: #333e5c;
+}
+#checkout-btn {
+  padding: 5px;
+  background-color: #51a139;
+  color: white;
+  font-size: 1rem;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+}
+#checkout-btn:hover {
+  background-color: #48903e;
+}
+.cart-item {
+  margin: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 2px solid #9ba3ba;
+}
+
+.remove-btn {
+  margin-left: 20px;
+  background-color: #dc3545;
+  color: white;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+  font-size: 1rem;
+}
+.remove-btn:hover {
+  background-color: #bd2130;
+}
+
+.popup {
+  display: none;
+  position: fixed;
+  top: 125px;
+  left: 0;
+  right: 0;
+  background-color: #0f172eb6;
+  color: white;
+  text-align: center;
+  padding: 10px 0;
+  z-index: 9999;
+}
+#popup-text {
+  font-size: 1.5rem;
+}
