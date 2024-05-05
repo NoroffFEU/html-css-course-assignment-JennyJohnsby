@@ -154,6 +154,11 @@ document.addEventListener("DOMContentLoaded", async function () {
     updateCart();
   } catch (error) {
     console.error("Error fetching data:", error);
+    const loadingIndicator = document.getElementById("loading-indicator");
     loadingIndicator.style.display = "none";
+    const section = document.querySelector("#jacket-info");
+    const errorHeading = document.createElement("h2")
+    errorHeading.innerText = "Looks like RainyDays was hit by a storm, please seek shelter and check back later!"
+    section.appendChild (errorHeading)
   }
 });
