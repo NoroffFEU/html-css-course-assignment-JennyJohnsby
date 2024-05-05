@@ -3,6 +3,7 @@ document.addEventListener("DOMContentLoaded", async function () {
     const loadingIndicator = document.getElementById("loading-indicator");
     const popup = document.getElementById("popup");
     const popupText = document.getElementById("popup-text");
+
     loadingIndicator.style.display = "block";
     const res = await fetch("https://api.noroff.dev/api/v1/rainy-days");
     const allProducts = await res.json();
@@ -20,6 +21,7 @@ document.addEventListener("DOMContentLoaded", async function () {
     }
     genderFilter.addEventListener("change", updateFilteredProducts);
     priceFilter.addEventListener("input", updateFilteredProducts);
+
     function updateFilteredProducts() {
       const selectedGender = genderFilter.value;
       const selectedPrice = parseInt(priceFilter.value);
@@ -123,9 +125,7 @@ document.addEventListener("DOMContentLoaded", async function () {
       );
       totalPriceDisplay.innerText = "Total Price: $" + totalPrice.toFixed(2);
     }
-    function navigateToProduct(productId) {
-      window.location.href = `../product/index.html?jacketId=${productId}`;
-    }
+
     function showCartPopup() {
       cartPopup.style.display = "block";
     }

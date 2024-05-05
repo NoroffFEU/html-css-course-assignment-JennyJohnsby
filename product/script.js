@@ -1,6 +1,6 @@
 document.addEventListener("DOMContentLoaded", async function () {
+  const loadingIcon = document.getElementById("loading");
   try {
-    const loadingIcon = document.getElementById("loading");
     loadingIcon.style.display = "block";
 
     const params = new URLSearchParams(window.location.search);
@@ -24,5 +24,11 @@ document.addEventListener("DOMContentLoaded", async function () {
     loadingIcon.style.display = "none";
   } catch (error) {
     console.error("Error fetching jacket data:", error);
+
+    loadingIcon.style.display = "none";
+    const jacketDetails = document.getElementById("jacket-details");
+    const errorTitle = document.createElement("h1");
+    errorTitle.innerText = "An error occured, please try again later";
+    jacketDetails.appendChild(errorTitle);
   }
 });

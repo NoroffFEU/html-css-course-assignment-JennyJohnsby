@@ -38,4 +38,5 @@ document.addEventListener("DOMContentLoaded", function () {
   }
 
   localStorage.removeItem("order");
+  localStorage.setItem("cart", JSON.stringify([]));
 });
