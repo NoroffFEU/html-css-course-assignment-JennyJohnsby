@@ -1,4 +1,3 @@
-// Fetch products data from the API
 async function fetchProducts() {
   try {
     const response = await fetch("https://api.noroff.dev/api/v1/rainy-days");
@@ -10,7 +9,6 @@ async function fetchProducts() {
   }
 }
 
-// Display random products on the webpage
 async function displayRandomProducts() {
   const productList = document.getElementById("products");
   const loadingIndicator = document.getElementById("loading");
@@ -49,6 +47,5 @@ async function displayRandomProducts() {
   }
 }
 
-// Display random products initially and then at intervals
 displayRandomProducts();
 setInterval(displayRandomProducts, 7000);

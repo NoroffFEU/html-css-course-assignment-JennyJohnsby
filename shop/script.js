@@ -50,13 +50,13 @@ document.addEventListener("DOMContentLoaded", async function () {
         imageContainer.appendChild(image);
         jacketInfo.appendChild(imageContainer);
 
-        const titleLink = document.createElement("a")
+        const titleLink = document.createElement("a");
         titleLink.href = `../product/index.html?jacketId=${jacket.id}`;
         titleLink.innerText = jacket.title;
         titleLink.classList.add("title");
 
-        const title = document.createElement("h3")
-        title.appendChild(titleLink)
+        const title = document.createElement("h3");
+        title.appendChild(titleLink);
         jacketInfo.appendChild(title);
         const sizeDropdown = document.createElement("select");
         sizeDropdown.classList.add("size-dropdown");
@@ -149,7 +149,7 @@ document.addEventListener("DOMContentLoaded", async function () {
         hideCartPopup();
       }
     });
-  
+
     displayProducts(allProducts);
     updateCart();
   } catch (error) {
